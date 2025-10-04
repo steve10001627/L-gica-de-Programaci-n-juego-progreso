@@ -1,14 +1,13 @@
-
 import random
 
 # En esta parte se detalla el inicio del juego 
 def jugar_ahorcado():
-    palabras = ["python", "programa", "ahorcado", "juego", "computadora"]
+    palabras = ["naruto", "futurama", "heroes", "juego", "academia" , "messi"]
     palabra_secreta = random.choice(palabras)
     letras_adivinadas = ["_"] * len(palabra_secreta)
-    intentos = 6
+    intentos = 3
 
-    print("\n¡Bienvenido al juego del Ahorcado!")
+    print("Bienvenido al juego del Ahorcado")
     print("Tienes", intentos, "intentos para adivinar la palabra secreta.")
     print(" ".join(letras_adivinadas))
 
@@ -17,12 +16,12 @@ def jugar_ahorcado():
         letra = input("Adivina una letra: ").lower()
 
         if letra in palabra_secreta:
-            print("¡Bien! La letra está en la palabra.")
+            print("Correcto la letra está en la palabra.")
             for i in range(len(palabra_secreta)):
                 if palabra_secreta[i] == letra:
                     letras_adivinadas[i] = letra
         else:
-            print("Esa letra no está en la palabra.")
+            print("No esa letra no está en la palabra.")
             intentos -= 1
 
         print(" ".join(letras_adivinadas))
@@ -30,8 +29,8 @@ def jugar_ahorcado():
 
     # Termina el juego
     if "_" not in letras_adivinadas:
-        print("¡Felicidades! Adivinaste la palabra:", palabra_secreta)
+        print("Muy bien hecho adivinaste la palabra:", palabra_secreta)
     else:
-        print("Perdiste. La palabra era:", palabra_secreta)
+        print("Lo siento perdiste mas suerte la próxima. La palabra era:", palabra_secreta)
 
 
