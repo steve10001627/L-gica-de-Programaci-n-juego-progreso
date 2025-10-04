@@ -32,5 +32,5 @@ def jugar_ahorcado():
         print("Muy bien hecho adivinaste la palabra:", palabra_secreta)
     else:
         print("Lo siento perdiste mas suerte la próxima. La palabra era:", palabra_secreta)
-
+jugar_ahorcado()
 
