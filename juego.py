@@ -32,5 +32,16 @@ def jugar_ahorcado():
         print("Muy bien hecho adivinaste la palabra:", palabra_secreta)
     else:
         print("Lo siento perdiste mas suerte la próxima. La palabra era:", palabra_secreta)
-jugar_ahorcado()
+
+# Bucle para volver a jugar
+def main():
+    while True:
+        jugar_ahorcado()
+        jugar_nuevamente = input("¿Quieres jugar otra vez? (sí/no): ").lower()
+        if jugar_nuevamente != "sí":
+            print("Gracias por jugar. ¡Hasta luego!")
+            break
+
+# Inicia el juego
+main()
 
