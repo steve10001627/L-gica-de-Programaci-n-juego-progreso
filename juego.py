@@ -37,8 +37,8 @@ def jugar_ahorcado():
 def main():
     while True:
         jugar_ahorcado()
-        jugar_nuevamente = input("¿Quieres jugar otra vez? (sí/no): ").lower()
-        if jugar_nuevamente != "sí":
+        jugar_nuevamente = input("¿Quieres jugar otra vez? (si/no): ").lower()
+        if jugar_nuevamente != "si":
             print("Gracias por jugar. ¡Hasta luego!")
             break
 
