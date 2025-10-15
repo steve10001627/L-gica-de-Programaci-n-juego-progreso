@@ -102,12 +102,19 @@ Permite al usuario volver a jugar si lo desea. Si responde "no", el programa fin
 1. Asegúrate de tener Python instalado en tu sistema.
 2. Descarga este repositorio o clónalo con:
 
-git clone https://github.com/tu-usuario/juego-ahorcado-python.git
+git clone https://github.com/steve10001627/L-gica-de-Programaci-n-juego-progreso.git
 
-3. Ejecuta el archivo en tu terminal o consola:
+3. Ve al directorio del proyecto:
+
+cd L-gica-de-Programaci-n-juego-progreso
+
+4. Ejecuta el archivo juego.py:
+
+python juego.py
 
 
 ## Quieres mejorarlo
 
 Las contribuciones son bienvenidas. Siéntete libre de modificar con tus mejoras o nuevas funcionalidades.
 Este proyecto es ideal para aprender colaborativamente y experimentar con Python. Se puede usar, modificar y distribuir libremente.
+
